@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/*  Weights: 400, 700 */
+
+:root{
+    --clr-darkcyan: hsl(185, 75%, 39%);
+    --clr-verydarkdesatblue: hsl(229, 23%, 23%);
+    --clr-darkgrayishblue: hsl(227, 10%, 46%);
+
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.hero{
+    background-color: var(--clr-darkcyan);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.top{
+    position: absolute;
+    top: -500px;
+    left: -300px;
+}
+
+.bottom{
+    position: absolute;
+    bottom: -400px;
+    right: -350px;
+    
+}
+
+.card{
+   
+    background-color: white;
+    position: relative;border-radius: 10px;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.cardpattern{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+   
+}
+
+.profile{
+    margin-top: 70px;
+    border-radius: 50px;
+    border: 2px solid white;
+    position: relative;
+    z-index: 3;
+}
+
+.col1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap:10px;
+    padding: 20px 10px 10px 10px;
+    
+
+
+}
+
+.name{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.titles span{
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.place{
+    font-size: .8rem;
+    margin-top: 5px;
+    font-weight: 300;
+    color: var(--clr-darkgrayishblue);
+}
+
+.col2{
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--clr-verydarkdesatblue);
+    padding: 10px;
+}
+
+.stat{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   gap:5px;
+   letter-spacing: 2px;
+}
+
+.stat h2{
+    font-size: 1.3rem;
+
+    font-weight: 700;
+}
+
+
+.stat p{
+    font-size: .6rem;
+    font-weight: 300;
+    color: var(--clr-darkgrayishblue);
+}
+
+
+@media (max-width: 375px) {
+    .card{
+        width: 90%;
+    }
+
+    .col2{
+        gap: 10px;
+    }
+
+    .top{
+    position: absolute;
+    top:-20px;
+    left: -200px;
+    }
+    .bottom{
+    position: absolute;
+    bottom: 0;
+    right: -250px;
+    
+}
+}
